@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primary-icon {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list input{
+    width: 300px;
+    height: 35px;
+}
+
+.amarelo {
+    background-color: darkcyan;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+.list-item {
+    font-size: 20px;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+@media all and (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar .container-icon {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        border-top: 1px solid white;
+
+    }
+
+    .primary-icon {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+
+}
+
+/* FIM NAVBAR */
+
+/* INICIO LANDING PAGE */
+
+.container-land {
+    background-color: rgb(97, 97, 235);
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+
+/* FIM LANDING PAGE */
+
+/* INICIO LOGIN */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container div{
+    flex: 1;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: blue;
+}
+
+.flex-container a:hover {
+    text-decoration: underline;
+}
+
+.container-login {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 400px;
+}
+
+.flex-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+input[type='text'], [type='password'] {
+    padding: 10px;
+    font-size: 18px;
+}
+
+label {
+    flex-basis: 130px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+input[type='button'] {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin: 20px 0;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+.login-form h1{
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+@media all and (max-width: 480px) {
+    .flex-input {
+        flex-direction: column;
+    }
+
+    label {
+        flex-basis: 0;
+    }
+}
+
+/* FIM LOGIN */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.ctnFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.op1 {
+    width: 38%;
+    display: inline-block;
+    background-color: darkblue;
+    font-size: 3vw;
+    text-align: center;
+    padding: 5vw 0vw 5vw 0vw;
+    min-width:40vw;
+}
+
+div.op2 p {
+    font-size: 21px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+  
+div.op2 {
+    width: 38%;
+    background-color: rgb(4, 4, 197);
+    display: inline-block;
+    margin-right: 0vw;
+    font-size: 3vw;
+    text-align: center;
+    padding: 5vw 0vw 5vw 0vw;
+    min-width:40vw;
+}
